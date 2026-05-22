@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ananda Fauzan</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#020b1f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* Navbar */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px;
+      background:#06122e;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      background:linear-gradient(to right,#4da6ff,#ffe600);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    nav ul{
+      display:flex;
+      gap:15px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#4da6ff;
+    }
+
+    /* Hero */
+    .hero{
+      padding:80px 20px;
+      text-align:center;
+      animation:fadeIn 1.5s ease;
+    }
+
+    .hero h1{
+      font-size:45px;
+      margin-bottom:15px;
+    }
+
+    .hero span{
+      background:linear-gradient(to right,#4da6ff,#ffe600);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      color:#d0d0d0;
+      line-height:1.8;
+      font-size:18px;
+      max-width:500px;
+      margin:auto;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 35px;
+      background:#2563eb;
+      border-radius:40px;
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 0 20px #2563eb;
+    }
+
+    .btn:hover{
+      transform:scale(1.1);
+      background:#3b82f6;
+    }
+
+    /* Card Section */
+    .container{
+      padding:40px 20px;
+    }
+
+    .title{
+      font-size:32px;
+      margin-bottom:30px;
+      text-align:center;
+    }
+
+    .card{
+      background:#08152f;
+      border-radius:20px;
+      padding:25px;
+      margin-bottom:25px;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(37,99,235,0.5);
+    }
+
+    .card h2{
+      margin-bottom:15px;
+      color:#4da6ff;
+      font-size:28px;
+    }
+
+    .card p{
+      color:#d6d6d6;
+      line-height:1.8;
+      font-size:17px;
+    }
+
+    .card button{
+      margin-top:20px;
+      padding:12px 25px;
+      border:none;
+      border-radius:30px;
+      background:#2563eb;
+      color:white;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .card button:hover{
+      background:#3b82f6;
+      transform:scale(1.05);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#aaa;
+      margin-top:40px;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Ananda Fauzan</div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#belajar">Belajar</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Halo, Saya <br><span>Ananda Fauzan</span></h1>
+
+    <p>
+      Saya seorang pelajar yang sedang mempelajari dunia teknologi,
+      networking, server, dan Linux untuk meningkatkan skill di bidang IT.
+    </p>
+
+    <a href="#belajar" class="btn">Explore More</a>
+  </section>
+
+  <!-- Belajar -->
+  <section class="container" id="belajar">
+
+    <h1 class="title">Yang Sedang Saya Pelajari</h1>
+
+    <!-- Networking -->
+    <div class="card">
+      <h2>Belajar Networking</h2>
+
+      <p>
+        Saya sedang belajar tentang networking seperti IP Address,
+        subnetting, routing, switch, dan cara menghubungkan jaringan
+        komputer agar dapat saling terhubung dengan baik.
+      </p>
+
+      <button onclick="alert('Semangat belajar Networking!')">
+        Pelajari
+      </button>
+    </div>
+
+    <!-- Server -->
+    <div class="card">
+      <h2>Belajar Server</h2>
+
+      <p>
+        Saya belajar mengelola server seperti Web Server,
+        DNS Server, dan SSH Server menggunakan Linux untuk
+        memahami bagaimana sebuah layanan berjalan di internet.
+      </p>
+
+      <button onclick="alert('Semangat belajar Server!')">
+        Pelajari
+      </button>
+    </div>
+
+    <!-- Linux -->
+    <div class="card">
+      <h2>Belajar Linux</h2>
+
+      <p>
+        Saya juga belajar sistem operasi Linux mulai dari command line,
+        manajemen file, hak akses user, hingga konfigurasi server
+        menggunakan terminal Linux.
+      </p>
+
+      <button onclick="alert('Semangat belajar Linux!')">
+        Pelajari
+      </button>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Ananda Fauzan | Portfolio Website
+  </footer>
+
+</body>
+</html>
